@@ -57,6 +57,7 @@ class gong_zhong_hao_spider(object):
         cursor.execute(sql,(a,b,c,d,e))
         db.commit()
         self.log('存入数据成功')
+        
     #将网页保存到本地
     def store_page(self,url,title):
         path='E:\gongzhonghao\%s'%self.name
